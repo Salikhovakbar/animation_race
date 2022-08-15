@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: gray;
+  font-size: 25px;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 900px;
+  height: 70%;
+  background-color: aqua;
+  display: grid;
+  grid-template-areas: "a b c" "d e f" "g h i";
+}
+
+.box__one {
+  grid-area: a;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.box__two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: b;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.box__three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas: c;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.box__four {
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  grid-area: d;
+  background-color: white;
+}
+
+.box__five {
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  grid-area: e;
+  background-color: black;
+}
+
+.box__six {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  grid-area: f;
+}
+
+.box__seven {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: g;
+  background-color: black;
+}
+
+.box__eight {
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  grid-area: h;
+  background-color: white;
+}
+
+.box__nine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  grid-area: i;
+  background-color: black;
+}
+
+.main {
+  -webkit-animation-name: main;
+          animation-name: main;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+@-webkit-keyframes main {
+  to {
+    transform: translateX(1300px);
+  }
+}
+
+@keyframes main {
+  to {
+    transform: translateX(1300px);
+  }
+}
+.box1 {
+  width: 200px;
+  height: 50px;
+  background-color: red;
+  margin: 100px;
+  border-radius: 15px;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.box2 {
+  width: 200px;
+  height: 50px;
+  background-color: gold;
+  margin: 100px;
+  border-radius: 15px;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+.box3 {
+  width: 200px;
+  height: 50px;
+  background-color: aqua;
+  margin: 100px;
+  border-radius: 15px;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+.box4 {
+  width: 200px;
+  height: 50px;
+  background-color: green;
+  margin: 100px;
+  border-radius: 15px;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.box5 {
+  width: 200px;
+  height: 50px;
+  background-color: orange;
+  margin: 100px;
+  border-radius: 15px;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}/*# sourceMappingURL=main.css.map */

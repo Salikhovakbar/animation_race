@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: gray;
+    font-size: 25px;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+// body{
+// display: flex;
+// justify-content: center;
+// align-items: center;
+// height: 100vh;
+// }
+.box {
+    width: 900px;
+    height: 70%;
+    background-color: aqua;
+    display: grid;
+    grid-template-areas:
+        "a b c"
+        "d e f"
+        "g h i"
+    ;
+}
+
+.box__one {
+    grid-area: a;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.box__two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: b;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.box__three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: c;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.box__four {
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-area: d;
+    background-color: white;
+}
+
+.box__five {
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-area: e;
+    background-color: black;
+}
+
+.box__six {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    grid-area: f;
+}
+
+.box__seven {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: g;
+    background-color: black;
+}
+
+.box__eight {
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-area: h;
+    background-color: white;
+}
+
+.box__nine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    grid-area: i;
+    background-color: black;
+}
+
+@mixin boxstyle ($main-color, $main-style, $main-function) {
+    width: 200px;
+    height: 50px;
+    background-color: $main-color;
+    margin: $main-style;
+    border-radius: 15px;
+    animation-timing-function: $main-function;
+}
+
+.main {
+    animation-name: main;
+    animation-duration: 10s;
+}
+
+@keyframes main {
+    to {
+        transform: translateX(1300px);
+    }
+}
+
+.box1 {
+    @include boxstyle(red, 100px, ease);
+}
+
+.box2 {
+    @include boxstyle(gold, 100px, ease-in);
+}
+
+.box3 {
+    @include boxstyle(aqua, 100px, ease-out);
+}
+
+.box4 {
+    @include boxstyle(green, 100px, linear);
+}
+
+.box5 {
+    @include boxstyle(orange, 100px, ease-in-out);
+}
